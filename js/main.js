@@ -252,6 +252,10 @@ function reload() {
    disAppeer2();
    
 
+   // srcAudio = ""
+
+   console.log(srcAudio);
+
    // $('#bad-1').removeClass('disabled');
 
    // document.getElementById('right').style.display="none";
@@ -325,3 +329,8 @@ function back() {
 }
 
 // ---------------------- End Backe to First page ------------- 
+
+
+
+// ----------------- slider ----------------
+
