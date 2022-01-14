@@ -195,6 +195,14 @@ function disAppeer1() {
    document.getElementById("desctiptinAudio").pause();
 
    document.getElementById("av-tag").play();
+
+   // Set max value when you know the duration
+   document.getElementById("av-tag").onloadedmetadata = () => document.getElementById("cur-time").max = document.getElementById("av-tag").duration
+   // update ("#av-tag") position
+   document.getElementById("cur-time").onchange = () => document.getElementById("av-tag").currentTime = document.getElementById("cur-time").value
+   // update range input when currentTime updates
+   document.getElementById("av-tag").ontimeupdate = () => document.getElementById("cur-time").value = document.getElementById("av-tag").currentTime
+
 }
 
 function disAppeer2() {
@@ -205,6 +213,9 @@ function disAppeer2() {
 
    document.getElementById("av-tag").pause();
 }
+
+
+
 
 // ---------------------- End Audio Player -----------------
 

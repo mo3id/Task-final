@@ -124,8 +124,18 @@ section .main-part {
 
 .card {
    border: none;
-   margin: 100px 40px;
+   margin: 100px 31px 100px 53px;
 }
+/* 
+#good-1 ,
+#good-2 {
+   margin:100px 73px 100px -12px;
+}
+
+#bad-1 ,
+#bad-2 {
+   margin:100px 73px 100px -12px;
+} */
 
 .choose {
    cursor: pointer;
@@ -331,4 +341,10 @@ footer {
    cursor: default;
 }
 
+.carousel-item p {
+   position: absolute;
+   top: 82px;
+   font-size: 46px;
+   font-weight: 500;
+}
 /* End Footer */
