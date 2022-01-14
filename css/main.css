@@ -9,8 +9,14 @@ body {
    min-height: 100vh;
 }
 
+@font-face {
+   font-family:"sassoon-infant-std-regular";
+   src:  url("../font/SassoonInfantStd.otf") 
+}
+
 body {
-   font-family: cursive;
+   font-family: 'sassoon-infant-std-regular', cursive, "sans-serif";
+   user-select: none;
 }
 
 #loading {
@@ -46,9 +52,9 @@ body {
 main {
    position: absolute;
    background-color: #fff;
-   height: 1000px;
-   width: 1300px;
-   left: calc(calc(100vw - 1300px) / 2);
+   height: 800px;
+   width: 1000px;
+   left: calc(calc(100vw - 1000px) / 2);
    transform-origin: top center;
    transition: all 500ms ease-in-out !important;
    -webkit-transition: all 500ms ease-in-out !important;
@@ -60,7 +66,7 @@ main {
 header {
    background-color: #fff;
    height: 15%;
-   padding: 20px;
+   padding: 10px;
    font-weight: 400;
    margin: 15px 0;
 }
@@ -76,7 +82,7 @@ header {
 }
 
 .head h1 {
-   font-size: 37px;
+   font-size: 35px;
 }
 
 /* End Header */
@@ -88,7 +94,8 @@ header {
 .reload,
 .show-ans,
 .back,
-.next {
+.next ,
+.main-part .img {
    cursor: pointer;
 }
 
@@ -117,11 +124,12 @@ section .main-part {
 
 .card {
    border: none;
+   padding: 60px;
 }
 
 .card .card-text {
    color: #000;
-   width: 52px;
+   width: 50px;
    height: 50px;
    border: 1px solid #A7DCEA;
    border-radius: 50%;
@@ -130,45 +138,46 @@ section .main-part {
    -ms-border-radius: 50%;
    -o-border-radius: 50%;
    text-align: center;
-   font-size: 25px;
+   font-size: 39px;
    background-color: #fff;
-   margin-top: 5%;
+   margin-left: 8%;
+   margin-top: 18%;
+   line-height: 1.1;
 }
 
 
 section .main-part .card img {
    margin: 50px auto;
+   cursor: pointer;
 }
 
 
 .main-part #right {
    position: absolute;
-   top: 540px;
-   left: 265px;
-
+   top: 385px;
+   left: 215px;
 }
 
 .main-part #right2 {
    position: absolute;
-   top: 540px;
-   left: 265px;
-
+   top: 385px;
+   left: 210px;
 }
 
 .main-part #wrong {
    position: absolute;
    width: 50px;
    height: 50px;
-   top: 540px;
-   right: 265px;
+   top: 387px;
+   right: 210px;
 }
 
 .main-part #wrong2 {
    position: absolute;
    width: 50px;
    height: 50px;
-   top: 540px;
-   right: 265px;
+   top: 387px;
+   right: 210px;
 }
 
 /* End Main Part */
@@ -203,7 +212,7 @@ footer img {
 }
 
 .footer img {
-   width: 100%;
+   width: 140%;
 }
 
 
@@ -224,13 +233,14 @@ footer img {
    align-items: center;
    width: 50%;
    background-color: #f5821f;
-   padding: 20px;
+   padding: 15px;
    border-radius: 45px;
    -webkit-border-radius: 45px;
    -moz-border-radius: 45px;
    -ms-border-radius: 45px;
    -o-border-radius: 45px;
-   box-shadow: inset 0px 0px 2px #000;
+   box-shadow: inset 0px 0px 2px 0px #000;
+   margin: 0 20px;
 }
 
 .player input[type="range"] {
@@ -247,8 +257,8 @@ footer img {
 .player input[type="range"]::-webkit-slider-thumb {
    -webkit-appearance: none;
    appearance: none;
-   width: 25px;
-   height: 25px;
+   width: 20px;
+   height: 20px;
    border-radius: 50%;
    background: #fff;
    cursor: pointer;
@@ -257,8 +267,8 @@ footer img {
 
 .player input[type="range"]::-moz-range-thumb {
    appearance: none;
-   width: 25px;
-   height: 25px;
+   width: 20px;
+   height: 20px;
    border-radius: 50%;
    background: #fff;
    cursor: pointer;
@@ -269,11 +279,13 @@ footer img {
 }
 
 .player .play-btn {
-   margin-right: 12px;
+   margin-right: 10px;
    width: 45px;
 }
 
-
+.player .play-btn img {
+   width: 100%;
+}
 
 .foote .reload {
 
@@ -300,13 +312,15 @@ footer img {
    border: 3px solid #0FA0C5;
    font-size: 30px;
    font-weight: bold;
-   height: 70px;
-   line-height: 60px;
+   height: 58px;
+   line-height: 30px;
    border-radius: 13px;
    -webkit-border-radius: 13px;
    -moz-border-radius: 13px;
    -ms-border-radius: 13px;
    -o-border-radius: 13px;
+   white-space: nowrap;
+   padding: 13px;
 }
 
 .disabled {

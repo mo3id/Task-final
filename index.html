@@ -114,7 +114,7 @@
 
                                  <div id="wrong" style="display: none;">
 
-                                    <img src="./images/wrong.png" style="width: 100%;">
+                                    <img src="./images/crossMark.png" style="width: 100%;">
 
                                  </div>
 
@@ -140,7 +140,7 @@
 
                                  </div>
 
-                                 <div id="right2" style="display: none;">
+                                 <div id="right2" >
 
                                     <img src="./images/right.png">
 
@@ -160,7 +160,7 @@
 
                                  <div id="wrong2" style="display: none;">
 
-                                    <img src="./images/wrong.png" style="width: 100%;">
+                                    <img src="./images/crossMark.png" style="width: 100%;">
 
                                  </div>
 
@@ -185,9 +185,9 @@
 
             <footer class="control-part">
 
-               <div class="footer col-xs-12">
+               <div class="footer col-12">
 
-                  <div class="replay">
+                  <div class="replay" onclick="reloadall()">
 
                      <img src="./images/replay_icon.png" class="img-responsive" />
 
@@ -213,6 +213,8 @@
                         <img id="img-pause" src="./images/pause.png" style="display: none;" onclick="disAppeer2()">
 
                      </button>
+
+                     <div class="play-time"></div>
 
                      <input id="cur-time" type="range" min="0" max="10" step="0" value="0">
 
