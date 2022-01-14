@@ -197,12 +197,26 @@ function disAppeer1() {
    document.getElementById("av-tag").play();
 
    // Set max value when you know the duration
+
    document.getElementById("av-tag").onloadedmetadata = () => document.getElementById("cur-time").max = document.getElementById("av-tag").duration
+
    // update ("#av-tag") position
+
    document.getElementById("cur-time").onchange = () => document.getElementById("av-tag").currentTime = document.getElementById("cur-time").value
+
    // update range input when currentTime updates
+
    document.getElementById("av-tag").ontimeupdate = () => document.getElementById("cur-time").value = document.getElementById("av-tag").currentTime
 
+   setTimeout(() => {
+
+      document.getElementById("img-pause").style.display = "none";
+
+      document.getElementById("img-paly").style.display = "block";
+      
+      document.getElementById("cur-time").value = document.getElementById("av-tag").currentTime
+
+   }, 2700);
 }
 
 function disAppeer2() {

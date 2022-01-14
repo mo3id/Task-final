@@ -219,8 +219,8 @@ footer {
 .foote .show-ans,
 .foote .next,
 .foote .back {
-   margin: 1% 2% 1% 2%;
-   width: 8%;
+   margin: 1% 2% 1% 0%;
+   width: 7%;
    display: inline-block;
 }
 
@@ -293,7 +293,7 @@ footer {
 
 .player .play-btn {
    margin-right: 10px;
-   width: 45px;
+   width: 35px;
 }
 
 .player .play-btn img {
