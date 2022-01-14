@@ -124,7 +124,15 @@ section .main-part {
 
 .card {
    border: none;
-   padding: 60px;
+   margin: 100px 40px;
+}
+
+.choose {
+   cursor: pointer;
+}
+
+.disabled2 {
+   cursor: default;
 }
 
 .card .card-text {
@@ -140,44 +148,39 @@ section .main-part {
    text-align: center;
    font-size: 39px;
    background-color: #fff;
-   margin-left: 8%;
-   margin-top: 18%;
+   margin-left: -9%;
+   margin-top: -10%;
    line-height: 1.1;
 }
 
 
-section .main-part .card img {
-   margin: 50px auto;
-   cursor: pointer;
-}
-
 
 .main-part #right {
    position: absolute;
-   top: 385px;
-   left: 215px;
+   top: 335px;
+   left: 150px;
 }
 
 .main-part #right2 {
    position: absolute;
-   top: 385px;
-   left: 210px;
+   top: 335px;
+   left: 150px;
 }
 
 .main-part #wrong {
    position: absolute;
-   width: 50px;
+   width: 42px;
    height: 50px;
-   top: 387px;
-   right: 210px;
+   top: 340px;
+   right: 150px;
 }
 
 .main-part #wrong2 {
    position: absolute;
-   width: 50px;
+   width: 42px;
    height: 50px;
-   top: 387px;
-   right: 210px;
+   top: 340px;
+   right: 150px;
 }
 
 /* End Main Part */
@@ -197,9 +200,9 @@ footer {
    padding: 30px 20px 0px;
 }
 
-footer img {
+/* footer img {
    cursor: pointer
-}
+} */
 
 .footer .replay,
 .foote .reload,
@@ -297,7 +300,7 @@ footer img {
 
 .disabled {
    opacity: .6;
-   cursor: defult;
+   cursor: default;
 }
 
 .counter {
