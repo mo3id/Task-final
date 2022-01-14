@@ -201,6 +201,7 @@ function desctiptinAudio() {
    // }
 }
 
+var srcAudio = document.getElementById("av-tag").getAttribute("src");
 
 function disAppeer1() {
 
@@ -222,6 +223,7 @@ function disAppeer2() {
    document.getElementById("img-paly").style.display="block"
 
    document.getElementById("av-tag").pause();
+
 
 }
 
@@ -248,6 +250,7 @@ function reload() {
    document.getElementById("desctiptinAudio").pause();
 
    disAppeer2();
+   
 
    // $('#bad-1').removeClass('disabled');
 
